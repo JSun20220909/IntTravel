@@ -3,13 +3,13 @@
 <div align="center">
 Huimin Yan¹, Longfei Xu¹†, Junjie Sun, Zheng Liu, Wei Luo, Kaikui Liu, Xiangxiang Chu
 
-*AMAP, Alibaba Group*
+<br>
+<br>
+AMAP, Alibaba Group
 
 <br>
 
 ¹Equal contribution &nbsp;&nbsp;&nbsp; †Corresponding author and project lead.
-
-<br>
 
 [![Data Set](https://img.shields.io/badge/Data-Set-green)](https://huggingface.co/datasets/GD-ML/IntTravel_dataset/tree/main)
 
