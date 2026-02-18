@@ -9,9 +9,11 @@ AMAP, Alibaba Group
 
 <br>
 
-¹Equal contribution &nbsp;&nbsp;&nbsp; †Corresponding author and project lead.
+¹Equal contribution. &nbsp;&nbsp;&nbsp; †Corresponding author and project lead.
 
+[![Paper Page](https://img.shields.io/badge/Paper-Page-blue)](https://arxiv.org/abs/2602.11664)
 [![Data Set](https://img.shields.io/badge/Data-Set-green)](https://huggingface.co/datasets/GD-ML/IntTravel_dataset/tree/main)
+
 
 </div>
 
@@ -79,5 +81,19 @@ IntTravel is **the first multi-task solution for generative recommendation**. We
 </p>
 
 The results of scaling experiments reveal a **strong and consistent scaling trend**. As the model depth increases from 1 to 80 layers, performance on all metrics steadily improves (task accuracy increases outward while loss decreases outward). There is no sign of performance decrease even at very deep configurations like **80 layers**, which is often a challenge for complex models. This demonstrates the excellent scaling capability of proposed architecture.
+
+
+## 📚 Citation
+
+If you find our paper and code helpful for your research, please consider starring our repository ⭐ and citing our work ✏️.
+
+```bibtex
+@article{yan2026inttravel,
+  title={IntTravel: A Real-World Dataset and Generative Framework for Integrated Multi-Task Travel Recommendation},
+  author={Yan, Huimin and Xu, Longfei and Sun, Junjie and Liu, Zheng and Luo, Wei and Liu, Kaikui and Chu, Xiangxiang},
+  journal={arXiv preprint arXiv:2602.11664},
+  year={2026}
+}
+
 
 
