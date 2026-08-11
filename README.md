@@ -94,6 +94,61 @@ If you find our paper and code helpful for your research, please consider starri
   journal={arXiv preprint arXiv:2602.11664},
   year={2026}
 }
+```
+
+# IntHQ: Task-Interactive Hierarchical Query on Dual-Stream Representations for Generative Recommendation
+
+<div align="center">
+Junjie Sun, Longfei Xu*, Huimin Yan, Wei Luo, Kaikui Liu, Xiangxiang Chu
+
+<br>
+<br>
+AMAP, Alibaba Group
+
+<br>
+
+*Corresponding author and project lead.
+
+[![Paper Page](https://img.shields.io/badge/Paper-Page-blue)](https://arxiv.org/abs/2608.09634)
+
+
+</div>
+
+## 📖 Overview
+Multi-task learning over heterogeneous data is fundamental to modern recommendation, while generative models are emerging as the backbone of next-generation recommenders. However, the integration of multi-task learning into the generative paradigm remains largely unexplored. Existing multi-task recommenders, in both discriminative and generative paradigms, extract task-relevant features from a single task-agnostic representation and wire tasks into a predefined conversion funnel. We show that this scheme is inherently prone to a threefold collapse. **Source collapse**, where task-specific signals are injected late and diluted in the shared latent space. **Relational collapse**, where task dependencies are either implicitly absorbed by the backbone or statically fixed by predefined funnels. **Hierarchical collapse**, where tasks depend on features at different scales and shift across training stages. We propose **IntHQ**, a multi-task generative recommender with three components, each alleviating one collapse. **Dual-Stream Decoupling (DSD)** injects task identity into computation stream early and separates the shared context stream from the task-specific stream, alleviating signal dilution. **Task-Interactive Modeling (TIM)** replaces the predefined funnel with explicit cross-task interaction, letting each task condition on the realized outcomes of its predecessors with learned, input-adaptive strength. **Hierarchical Querying (HQ)** lets each task gather multi-scale information across different layers at different training stages. In offline evaluations, **IntHQ** consistently outperforms competitive encoder backbones under four representative task-head configurations. Deployed in production on Amap, serving hundreds of millions of users for travel recommendation, **IntHQ** yields a 1.60% relative UVCTR lift.
+
+## 💡 IntHQ: Multi-Task Framework
+
+<img width="3675" height="2135" alt="image" src="https://github.com/user-attachments/assets/c6ed3df6-34ea-4dcc-b3c2-c3bde0596c65" />
+
+We propose **IntHQ**, a multi-task generative recommender with three components, each alleviating one collapse:
+
+* **Dual-Stream Decoupling (DSD)** injects task identity into the computation stream early and separates the shared context stream from the task-specific stream, alleviating signal dilution.
+
+* **Task-Interactive Modeling (TIM)** replaces the predefined funnel with explicit cross-task interaction, letting each task condition on the realized outcomes of its predecessors with learned, input-adaptive strength.
+
+* **Hierarchical Querying (HQ)** lets each task gather multi-scale information across different layers at different training stages.
+
+
+## ✨ Scaling Laws
+<p align="center">
+<img width="1086" height="493" alt="scaling" src="https://github.com/user-attachments/assets/d4242eac-80c1-4630-af98-70a778b3cd23" />
+</p>
+
+We verify that IntHQ inherits this property by sweeping the encoder depth and width with all other hyper-parameters fixed, training each variant on the same data stream. Deeper and wider encoders present better performance as expected. The dual stream structure scales without modification.
+
+
+## 📚 Citation
+
+If you find our paper and code helpful for your research, please consider starring our repository ⭐ and citing our work ✏️.
+
+```bibtex
+@article{sun2026inthq,
+  title={IntHQ: Task-Interactive Hierarchical Query on Dual-Stream Representations for Generative Recommendation},
+  author={Sun, Junjie and Xu, Longfei and Yan, Huimin and Luo, Wei and Liu, Kaikui and Chu, Xiangxiang},
+  journal={arXiv preprint arXiv:2608.09634},
+  year={2026}
+}
 
 
 
